@@ -1,0 +1,17 @@
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Test_App\Test_App\Test_App\bin\Debug\net8.0-windows\Test_App.exe
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Test_App\Test_App\Test_App\bin\Debug\net8.0-windows\Test_App.deps.json
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Test_App\Test_App\Test_App\bin\Debug\net8.0-windows\Test_App.runtimeconfig.json
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Test_App\Test_App\Test_App\bin\Debug\net8.0-windows\Test_App.dll
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Test_App\Test_App\Test_App\bin\Debug\net8.0-windows\Test_App.pdb
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Test_App\Test_App\Test_App\obj\Debug\net8.0-windows\Test_App.Form1.resources
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Test_App\Test_App\Test_App\obj\Debug\net8.0-windows\Test_App.csproj.GenerateResource.cache
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Test_App\Test_App\Test_App\obj\Debug\net8.0-windows\Test_App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Test_App\Test_App\Test_App\obj\Debug\net8.0-windows\Test_App.AssemblyInfoInputs.cache
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Test_App\Test_App\Test_App\obj\Debug\net8.0-windows\Test_App.AssemblyInfo.cs
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Test_App\Test_App\Test_App\obj\Debug\net8.0-windows\Test_App.csproj.CoreCompileInputs.cache
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Test_App\Test_App\Test_App\obj\Debug\net8.0-windows\Test_App.sourcelink.json
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Test_App\Test_App\Test_App\obj\Debug\net8.0-windows\Test_App.dll
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Test_App\Test_App\Test_App\obj\Debug\net8.0-windows\refint\Test_App.dll
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Test_App\Test_App\Test_App\obj\Debug\net8.0-windows\Test_App.pdb
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Test_App\Test_App\Test_App\obj\Debug\net8.0-windows\Test_App.genruntimeconfig.cache
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Test_App\Test_App\Test_App\obj\Debug\net8.0-windows\ref\Test_App.dll
