@@ -3,6 +3,8 @@
 
     <head>
         <title>Hello Javascript</title>
+
+        <script src="test.js" defer></script>
     </head>
 
     <body>
@@ -13,39 +15,8 @@
         <button type="button" onclick="increaseCounter()">+</button>
         <button type="button" onclick="decreaseCounter()">-</button>
         <button type="button" onclick="resetCounter()">reset</button>
-
-
-        <script>
-            let count = 0;
-
-            function updateCounter() {
-                document.getElementById("counter").innerHTML = count;
-
-            }
-
-            function increaseCounter() {
-                count++;
-                updateCounter();
-
-            }
-
-            function decreaseCounter() {
-                count--;
-
-                // Conditional for practice.
-                if (count < 0) {
-                count = 0;
-                }
-                updateCounter();
-
-            }
-
-            function resetCounter() {
-                count = 0;
-                updateCounter();
-
-            }
-        </script>
+        <button type="button" onclick="saveCounter()">save</button>
+        <button type="button" onclick="loadCounter()">load</button>
 
     </body>
 
