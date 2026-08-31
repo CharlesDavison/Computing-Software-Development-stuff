@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+
+            let usrInput = parseInt(prompt("Enter your test results."));
+
+            while (usrInput > 100 || usrInput < 0) {
+                usrInput = prompt("Please enter a valid test result between 0 and 100.");
+            }
+
+            if (usrInput >= 50) {
+                console.log("You have passed the test.");
+            } else {
+                console.log("You have failed the test.");
+            }
+
+        </script>
+    </head>
+</html>
