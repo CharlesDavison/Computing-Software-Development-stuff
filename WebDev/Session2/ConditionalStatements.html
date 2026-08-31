@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>JavaScript Conditional Statements</title>
+        <script>
+            let workingAge = 0; // Declare and initialise working age. 
+            let dayNumber = 0; // Integer data type
+            let dayName = ""; // Empty string
+            let temperature = 0.0;
+
+            workingAge = parseInt(window.prompt("What is the employee age?"));
+
+            window.alert(typeof workingAge);
+
+            if (workingAge >= 65) {
+                window.alert("They can retire.");
+
+            } else if (workingAge >= 23){
+                window.alert("Maximum minimum wage.");
+
+            } else if (workingAge >= 21) {
+                window.alert("Mid level minimum wage.");
+
+            } else if (workingAge >= 18) {
+                window.alert("Start level minimum wage.");
+
+            } else {
+                window.alert("No minimum wage set.");
+
+            }
+
+            if (workingAge >= 16 && workingAge <= 20) {
+                window.alert("Both conditions match.");
+
+            }
+
+            if (workingAge >= 16 || workingAge <= 20) {
+                window.alert("At least one condition matches.");
+
+            }
+
+            if (workingAge != 16) {
+                window.alert("Age is not 16.");
+
+            }
+
+            if (workingAge == 16) {
+                window.alert("The value is a match.");
+
+            }
+
+            // Value and data type.
+            if (workingAge === 16) {
+                window.alert("The value and data type is a match.");
+
+            }
+
+            window.alert(typeof workingAge);
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <!-- visible page content goes here -->
+
+    </body>
+
+</html>
