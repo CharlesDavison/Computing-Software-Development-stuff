@@ -1,0 +1,11 @@
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\FirstLook\FirstLook\bin\Debug\FirstLook.exe.config
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\FirstLook\FirstLook\bin\Debug\FirstLook.exe
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\FirstLook\FirstLook\bin\Debug\FirstLook.pdb
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\FirstLook\FirstLook\obj\Debug\FirstLook.csproj.AssemblyReference.cache
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\FirstLook\FirstLook\obj\Debug\FirstLook.Form1.resources
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\FirstLook\FirstLook\obj\Debug\FirstLook.Properties.Resources.resources
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\FirstLook\FirstLook\obj\Debug\FirstLook.csproj.GenerateResource.cache
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\FirstLook\FirstLook\obj\Debug\FirstLook.csproj.CoreCompileInputs.cache
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\FirstLook\FirstLook\obj\Debug\FirstLook.exe
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\FirstLook\FirstLook\obj\Debug\FirstLook.pdb
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\FirstLook\FirstLook\obj\Debug\FirstLook.exe.config
