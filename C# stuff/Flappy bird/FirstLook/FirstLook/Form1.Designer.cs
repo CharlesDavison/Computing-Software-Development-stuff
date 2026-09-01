@@ -166,6 +166,7 @@
             this.Controls.Add(this.pctPipeTop);
             this.Controls.Add(this.pctPipeBottom);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Balls";
             ((System.ComponentModel.ISupportInitialize)(this.pctBird)).EndInit();
