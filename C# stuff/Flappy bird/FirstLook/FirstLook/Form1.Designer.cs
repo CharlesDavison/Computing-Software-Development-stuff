@@ -194,7 +194,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Balls";
+            this.Text = "Bird";
             ((System.ComponentModel.ISupportInitialize)(this.pctBird)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctPipeBottom)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctPipeTop)).EndInit();
