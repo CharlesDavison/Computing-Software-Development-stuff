@@ -1,4 +1,5 @@
-﻿using System;
+﻿// The majority of these are unused, but idk if removing them will break something. ¯\_(ツ)_/¯
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,45 +8,50 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace FirstLook
 {
     public partial class Form1 : Form
     {
-
+        // Global variabled are initialised here.
         private int jumpVelocity = 0;
         private const int Gravity = 1;
         private Timer gameTimer;
         private Random rnd = new Random();
         private int Score = 0;
 
-        public Form1()
+        // Start button clicked. Hides the start button and shows the jump button, and starts the game timer.
+        private void btnStart_Click(object sender, EventArgs e)
         {
-            InitializeComponent();
+            lblStart.Visible = false;
+            btnJump.Enabled = true;
 
-            btnJump.Enabled = false;
+            btnStart.Visible = false;
+            btnStart.Enabled = false;
+            lblScore.Visible = true;
+            lblTitle.Visible = false;
+            lblHighScore.Visible = true;
 
-            gameTimer = new Timer();
-            gameTimer.Interval = 16;
-            gameTimer.Tick += GameTimer_Tick;
-
-            pctBird.Location = new Point(300, 200);
-
-            pctPipeBottom.Location = new Point(800, 400);
-            pctPipeTop.Location = new Point(800, -500);
+            gameTimer.Start();
         }
 
-
-        // Bird player
-        private void pctBird_Click(object sender, EventArgs e)
+        // Exit button. Closes the program.
+        private void btnExit_Click(object sender, EventArgs e)
         {
+            Application.Exit();
+        }
 
+        // Jump button clicked.
+        private void button1_Click(object sender, EventArgs e)
+        {
+            jumpVelocity = -10;
         }
 
         // Game loop
         private void GameTimer_Tick(object sender, EventArgs e)
         {
-            // Gravity
+            // Gravity and jumping.
             jumpVelocity += Gravity;
 
             pctBird.Top += jumpVelocity;
@@ -54,43 +60,36 @@ namespace FirstLook
             pctPipeTop.Left -= 5;
             pctPipeBottom.Left -= 5;
 
+            // When the pipes reach the edge of the screen, move them back at a random height, and increment the score.
             if (pctPipeBottom.Location.X < 0)
             {
+                // Pick a random position for the pipes to be in.
                 int newY = rnd.Next(300, 500);
                 pctPipeBottom.Location = new Point(800, newY);
                 pctPipeTop.Location = new Point(800, newY - 900);
 
+                // Add a point, and update the counter.
                 Score++;
                 lblScore.Text = Score.ToString();
             }
 
             // Death Detection
-            if (pctBird.Location.Y > 558)
+            // If the bird goes off screen, or falls, it dies.
+            if (pctBird.Location.Y > 558 || pctBird.Location.Y < 0)
             {
+                // die
                 die();
             }
 
+            // Cool af function that means i don't have to do any annoying maths to figure out collision. Also, if touch pipe then die.
             if (pctBird.Bounds.IntersectsWith(pctPipeTop.Bounds) || pctBird.Bounds.IntersectsWith(pctPipeBottom.Bounds))
             {
+                // die
                 die();
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Jump();
-        }
-
-        private void Jump()
-        {
-            jumpVelocity = -10;
-        }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
+        // This function is called when the player dies. It stops the game, disables the jump button, and shows the game over screen.
         private void die()
         {
             gameTimer.Stop();
@@ -107,18 +106,71 @@ namespace FirstLook
             lblGameOver.Text = "Game Over!\nScore: " + Score.ToString();
             lblGameOver.Enabled = true;
             lblGameOver.Visible = true;
+
+            saveHighScore();
         }
 
-        private void btnStart_Click(object sender, EventArgs e)
+        // Saves the highscore to a text file and appends a message to lblGameOver if the score is higher than the previous highscore. If the file doesn't exist, it creates it. If the file is empty or has invalid data, it sets the highscore to 0.
+        private void saveHighScore()
         {
-            lblStart.Visible = false;
-            btnJump.Enabled = true;
+            if (!int.TryParse(File.ReadAllText("score.txt"), out int highScore))
+            {
+                highScore = 0;
+            }
 
-            btnStart.Visible = false;
-            btnStart.Enabled = false;
-            lblScore.Visible = true;
+            if (Score > highScore)
+            {
+                File.WriteAllText("score.txt", Score.ToString());
+                lblGameOver.Text += "\nNew High Score!";
+            }
+        }
 
-            gameTimer.Start();
+        // loads the highscore from a text file and displays it in lblHighScore.
+        private void loadHighScore()
+        {
+            if (!File.Exists("score.txt"))
+            {
+                File.Create("score.txt").Close();
+            }
+
+            if (!int.TryParse(File.ReadAllText("score.txt"), out int highScore))
+            {
+                highScore = 0;
+            }
+
+            lblHighScore.Text = "High Score: " + highScore.ToString();
+
+            lblTitle.Text = "Bird Game\nHigh Score: " + highScore.ToString();
+            lblHighScore.Text = "High Score: " + highScore.ToString();
+        }
+
+        // Everything in here gets ran immediately when the program starts.
+        public Form1()
+        {
+            // idk. autogenerated
+            InitializeComponent();
+
+            // Get high score from file
+            loadHighScore();
+
+            // So you don't accidentally click the jump button before the game starts. I don't know if microsoft has weird things about stuff.
+            btnJump.Enabled = false;
+
+            // The game timer. This is what makes the game run. It runs the GameTimer_Tick function every 16 milliseconds, which is about 60 times per second.
+            gameTimer = new Timer();
+            gameTimer.Interval = 16;
+            gameTimer.Tick += GameTimer_Tick;
+
+            // Make sure the bird and pipes are in the right place, in case i accidentally move them in the designer.
+            pctBird.Location = new Point(300, 200);
+            pctPipeBottom.Location = new Point(800, 400);
+            pctPipeTop.Location = new Point(800, -500);
+        }
+
+        // Bird player clicked
+        private void pctBird_Click(object sender, EventArgs e)
+        {
+            // Nothing happens, but if i delete it, everything breaks. Could make an easter egg. That would be cool.
         }
     }
 }
