@@ -94,14 +94,18 @@ namespace FirstLook
         {
             gameTimer.Stop();
 
+            pctBird.Visible = false; 
             pctBird.Enabled = false;
 
             btnJump.Enabled = false;
+            btnJump.Visible = false;
 
             pctPipeBottom.Enabled = false;
             pctPipeTop.Enabled = false;
 
             lblScore.Visible = false;
+            lblHighScore.Visible = false;
+
 
             lblGameOver.Text = "Game Over!\nScore: " + Score.ToString();
             lblGameOver.Enabled = true;
@@ -130,7 +134,16 @@ namespace FirstLook
         {
             if (!File.Exists("score.txt"))
             {
-                File.Create("score.txt").Close();
+                try
+                {
+                    File.Create("score.txt").Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error creating score.txt: " + ex.Message);
+                    Task.Delay(10000).Wait();
+                    Application.Exit();
+                }
             }
 
             if (!int.TryParse(File.ReadAllText("score.txt"), out int highScore))

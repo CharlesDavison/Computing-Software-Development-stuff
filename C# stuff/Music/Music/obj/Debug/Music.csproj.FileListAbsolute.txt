@@ -1,0 +1,11 @@
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Music\Music\bin\Debug\Music.exe.config
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Music\Music\bin\Debug\Music.exe
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Music\Music\bin\Debug\Music.pdb
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Music\Music\obj\Debug\Music.csproj.AssemblyReference.cache
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Music\Music\obj\Debug\Music.Form1.resources
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Music\Music\obj\Debug\Music.Properties.Resources.resources
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Music\Music\obj\Debug\Music.csproj.GenerateResource.cache
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Music\Music\obj\Debug\Music.csproj.CoreCompileInputs.cache
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Music\Music\obj\Debug\Music.exe
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Music\Music\obj\Debug\Music.pdb
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Music\Music\obj\Debug\Music.exe.config

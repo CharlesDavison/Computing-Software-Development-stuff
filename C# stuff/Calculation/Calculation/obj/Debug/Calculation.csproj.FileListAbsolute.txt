@@ -1,0 +1,11 @@
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Calculation\Calculation\bin\Debug\Calculation.exe.config
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Calculation\Calculation\bin\Debug\Calculation.exe
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Calculation\Calculation\bin\Debug\Calculation.pdb
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Calculation\Calculation\obj\Debug\Calculation.csproj.AssemblyReference.cache
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Calculation\Calculation\obj\Debug\Calculation.Properties.Resources.resources
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Calculation\Calculation\obj\Debug\Calculation.csproj.GenerateResource.cache
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Calculation\Calculation\obj\Debug\Calculation.csproj.CoreCompileInputs.cache
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Calculation\Calculation\obj\Debug\Calculation.exe
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Calculation\Calculation\obj\Debug\Calculation.pdb
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Calculation\Calculation\obj\Debug\Calculation.exe.config
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\Calculation\Calculation\obj\Debug\Calculation.Form1.resources
