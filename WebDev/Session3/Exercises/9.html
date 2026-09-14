@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+
+        let usrInput;
+
+        function printHelloWorld() {
+            console.log("Hello World");
+        }
+
+        function printStickman() {
+            console.log(" O \n/|\\\n/ \\");
+        }
+
+        do {
+            usrInput = parseInt(window.prompt("1. Print \"Hello World\"\n2. Print a stickman\n3. Quit"));
+
+            switch (usrInput) {
+                case 1:
+                    printHelloWorld();
+                    break;
+                case 2:
+                    printStickman();
+                    break;
+                case 3:
+                    console.log("Goodbye!");
+                    break;
+                default:
+                    console.log("Invalid input. Please try again.");
+            }
+
+        } while (usrInput != "3");
+
+        </script>
+    </head>
+</html>

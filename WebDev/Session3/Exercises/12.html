@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+
+            let balance = 100;
+
+            let usrInput;
+            do {
+                usrInput = parseInt(prompt("Enter a number to withdraw."));
+            } while (usrInput > balance);
+
+            console.log("Successfully withdrew £" + usrInput);
+
+        </script>
+    </head>
+</html>
