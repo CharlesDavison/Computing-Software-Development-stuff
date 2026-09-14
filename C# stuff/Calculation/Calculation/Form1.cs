@@ -32,18 +32,15 @@ namespace Calculation
                     return;
                 }
 
-                // Random variable because TryParse wanted it annoyingly.
-                int throwAway;
-                
+                double Num1;
+                double Num2;
+
                 // If the values in the text boxes are not a valid integer, then tell the user to enter valid numbers.
-                if (!int.TryParse(rtbNum1.Text, out throwAway) || !int.TryParse(rtbNum2.Text, out throwAway))
+                if (!double.TryParse(rtbNum1.Text, out Num1) || !double.TryParse(rtbNum2.Text, out Num2))
                 {
                     MessageBox.Show("Not valid numbers.");
                     return;
                 }
-
-                double Num1 = double.Parse(rtbNum1.Text);
-                double Num2 = double.Parse(rtbNum2.Text);
 
                 rtbAddition.Text = Convert.ToString(Num1 + Num2);
                 rtbSubtraction.Text = Convert.ToString(Num1 - Num2);

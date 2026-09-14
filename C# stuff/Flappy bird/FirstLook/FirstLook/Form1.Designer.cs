@@ -41,6 +41,7 @@
             this.btnStart = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblHighScore = new System.Windows.Forms.Label();
+            this.btnRestart = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pctBird)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctPipeBottom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctPipeTop)).BeginInit();
@@ -174,12 +175,25 @@
             this.lblHighScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblHighScore.Visible = false;
             // 
+            // btnRestart
+            // 
+            this.btnRestart.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestart.Location = new System.Drawing.Point(457, 379);
+            this.btnRestart.Name = "btnRestart";
+            this.btnRestart.Size = new System.Drawing.Size(343, 80);
+            this.btnRestart.TabIndex = 13;
+            this.btnRestart.Text = "Restart";
+            this.btnRestart.UseVisualStyleBackColor = true;
+            this.btnRestart.Visible = false;
+            this.btnRestart.Click += new System.EventHandler(this.btnRestart_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.btnRestart);
             this.Controls.Add(this.lblHighScore);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.btnStart);
@@ -217,6 +231,7 @@
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lblHighScore;
+        private System.Windows.Forms.Button btnRestart;
     }
 }
 

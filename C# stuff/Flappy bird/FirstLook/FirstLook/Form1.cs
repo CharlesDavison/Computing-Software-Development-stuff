@@ -1,11 +1,6 @@
 ﻿// The majority of these are unused, but idk if removing them will break something. ¯\_(ツ)_/¯
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
@@ -24,6 +19,7 @@ namespace FirstLook
         // Start button clicked. Hides the start button and shows the jump button, and starts the game timer.
         private void btnStart_Click(object sender, EventArgs e)
         {
+            // Shit happens.
             lblStart.Visible = false;
             btnJump.Enabled = true;
 
@@ -32,6 +28,7 @@ namespace FirstLook
             lblScore.Visible = true;
             lblTitle.Visible = false;
             lblHighScore.Visible = true;
+            btnRestart.Visible = false;
 
             gameTimer.Start();
         }
@@ -88,13 +85,94 @@ namespace FirstLook
                 die();
             }
         }
+        
+        // Saves the highscore to a text file and appends a message to lblGameOver if the score is higher than the previous highscore. If the file doesn't exist, it creates it. If the file is empty or has invalid data, it sets the highscore to 0.
+        private void saveHighScore()
+        {
+            // It tries to parse file for a score. If it succeeds, it goes into highscore. If it fails, it sets highscore to 0.
+            if (!int.TryParse(File.ReadAllText("score.txt"), out int highScore))
+            {
+                highScore = 0;
+            }
+
+            // If the highscore from the file is less than the current score, it overwrites the contents of the score file with the current score.
+            if (Score > highScore)
+            {
+                File.WriteAllText("score.txt", Score.ToString());
+                lblGameOver.Text += "\nNew High Score!";
+            }
+        }
+
+        // loads the highscore from a text file and displays it in lblHighScore.
+        private void loadHighScore()
+        {
+            // If the score file doesn't exist, make it. This only happens in this function as it's the first function that accesses the file to run, and saveHighScore can not physically run unless this has run first. If it does run before this one, something has gone TERRIBLY WRONG.
+            if (!File.Exists("score.txt"))
+            {
+                try
+                {
+                    File.Create("score.txt").Close();
+                }
+                // If it fails at all, it will error and exit after a bit.
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error creating score.txt: " + ex.Message);
+                    Task.Delay(10000).Wait();
+                    Application.Exit();
+                }
+            }
+
+            // It tries to parse file for a score. If it succeeds, it goes into highscore. If it fails, it sets highscore to 0.
+            if (!int.TryParse(File.ReadAllText("score.txt"), out int highScore))
+            {
+                highScore = 0;
+            }
+
+            lblHighScore.Text = "High Score: " + highScore.ToString();
+
+            lblTitle.Text = "Bird Game\nHigh Score: " + highScore.ToString();
+            lblHighScore.Text = "High Score: " + highScore.ToString();
+        }
+
+        // Bird player clicked
+        private void pctBird_Click(object sender, EventArgs e)
+        {
+            // Nothing happens, but if i delete it, everything breaks. Could make an easter egg. That would be cool.
+        }
+
+        private void startGame()
+        {
+            // Get high score from file
+            loadHighScore();
+
+            // So you don't accidentally click the jump button before the game starts. I don't know if microsoft has weird things about stuff.
+            btnJump.Enabled = false;
+
+
+            // Make sure the bird and pipes are in the right place, in case i accidentally move them in the designer.
+            pctBird.Location = new Point(300, 200);
+            pctPipeBottom.Location = new Point(800, 400);
+            pctPipeTop.Location = new Point(800, -500);
+
+            // Pick a random position for the pipes to be in for the start.
+            int newY = rnd.Next(300, 500);
+            pctPipeBottom.Location = new Point(800, newY);
+            pctPipeTop.Location = new Point(800, newY - 900);
+
+            // The game timer. This is what makes the game run. It runs the GameTimer_Tick function every 16 milliseconds, which is about 60 times per second.
+            gameTimer = new Timer();
+            gameTimer.Interval = 16;
+            gameTimer.Tick += GameTimer_Tick;
+        }
 
         // This function is called when the player dies. It stops the game, disables the jump button, and shows the game over screen.
         private void die()
         {
+            // Stop the game loop.
             gameTimer.Stop();
 
-            pctBird.Visible = false; 
+            // Shit happens
+            pctBird.Visible = false;
             pctBird.Enabled = false;
 
             btnJump.Enabled = false;
@@ -110,51 +188,38 @@ namespace FirstLook
             lblGameOver.Text = "Game Over!\nScore: " + Score.ToString();
             lblGameOver.Enabled = true;
             lblGameOver.Visible = true;
+            btnRestart.Visible = true;
 
             saveHighScore();
         }
 
-        // Saves the highscore to a text file and appends a message to lblGameOver if the score is higher than the previous highscore. If the file doesn't exist, it creates it. If the file is empty or has invalid data, it sets the highscore to 0.
-        private void saveHighScore()
+        private void btnRestart_Click(object sender, EventArgs e)
         {
-            if (!int.TryParse(File.ReadAllText("score.txt"), out int highScore))
-            {
-                highScore = 0;
-            }
+            pctBird.Visible = true;
+            pctBird.Enabled = true;
 
-            if (Score > highScore)
-            {
-                File.WriteAllText("score.txt", Score.ToString());
-                lblGameOver.Text += "\nNew High Score!";
-            }
-        }
+            btnJump.Visible = true;
 
-        // loads the highscore from a text file and displays it in lblHighScore.
-        private void loadHighScore()
-        {
-            if (!File.Exists("score.txt"))
-            {
-                try
-                {
-                    File.Create("score.txt").Close();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error creating score.txt: " + ex.Message);
-                    Task.Delay(10000).Wait();
-                    Application.Exit();
-                }
-            }
+            pctPipeBottom.Enabled = true;
+            pctPipeTop.Enabled = true;
 
-            if (!int.TryParse(File.ReadAllText("score.txt"), out int highScore))
-            {
-                highScore = 0;
-            }
+            lblScore.Visible = true;
+            lblHighScore.Visible = true;
 
-            lblHighScore.Text = "High Score: " + highScore.ToString();
 
-            lblTitle.Text = "Bird Game\nHigh Score: " + highScore.ToString();
-            lblHighScore.Text = "High Score: " + highScore.ToString();
+            lblGameOver.Enabled = false;
+            lblGameOver.Visible = false;
+            btnRestart.Visible = false;
+
+            jumpVelocity = 0;
+            Score = 0;
+            lblScore.Text = "0";
+
+
+            btnStart.Visible = true;
+            btnStart.Enabled = true;
+
+            startGame();
         }
 
         // Everything in here gets ran immediately when the program starts.
@@ -163,27 +228,9 @@ namespace FirstLook
             // idk. autogenerated
             InitializeComponent();
 
-            // Get high score from file
-            loadHighScore();
-
-            // So you don't accidentally click the jump button before the game starts. I don't know if microsoft has weird things about stuff.
-            btnJump.Enabled = false;
-
-            // The game timer. This is what makes the game run. It runs the GameTimer_Tick function every 16 milliseconds, which is about 60 times per second.
-            gameTimer = new Timer();
-            gameTimer.Interval = 16;
-            gameTimer.Tick += GameTimer_Tick;
-
-            // Make sure the bird and pipes are in the right place, in case i accidentally move them in the designer.
-            pctBird.Location = new Point(300, 200);
-            pctPipeBottom.Location = new Point(800, 400);
-            pctPipeTop.Location = new Point(800, -500);
+            // Start the game loop.
+            startGame();
         }
 
-        // Bird player clicked
-        private void pctBird_Click(object sender, EventArgs e)
-        {
-            // Nothing happens, but if i delete it, everything breaks. Could make an easter egg. That would be cool.
-        }
     }
 }

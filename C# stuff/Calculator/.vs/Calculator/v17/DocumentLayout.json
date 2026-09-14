@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{66A9FFAC-DE4B-4EB1-A162-711AE56F0944}|Calculator\\Calculator.csproj|solutionrelative:calculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66A9FFAC-DE4B-4EB1-A162-711AE56F0944}|Calculator\\Calculator.csproj|c:\\users\\1927458\\onedrive - fife college\\hnc computing\\computing-software-development-stuff\\c# stuff\\calculator\\calculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{66A9FFAC-DE4B-4EB1-A162-711AE56F0944}|Calculator\\Calculator.csproj|C:\\Users\\1927458\\OneDrive - Fife College\\HNC Computing\\Computing-Software-Development-stuff\\C# stuff\\Calculator\\calculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{66A9FFAC-DE4B-4EB1-A162-711AE56F0944}|Calculator\\Calculator.csproj|solutionrelative:calculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -28,7 +28,7 @@
               "RelativeDocumentMoniker": "Calculator\\Form1.cs",
               "ToolTip": "C:\\Users\\1927458\\OneDrive - Fife College\\HNC Computing\\Computing-Software-Development-stuff\\C# stuff\\Calculator\\Calculator\\Form1.cs",
               "RelativeToolTip": "Calculator\\Form1.cs",
-              "ViewState": "AgIAAKIAAAAAAAAAAADgv7gAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAJ8AAAAAAAAAAADgv7gAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-08T08:23:33.449Z",
               "EditorCaption": ""
@@ -42,8 +42,7 @@
               "ToolTip": "C:\\Users\\1927458\\OneDrive - Fife College\\HNC Computing\\Computing-Software-Development-stuff\\C# stuff\\Calculator\\Calculator\\Form1.cs [Design]",
               "RelativeToolTip": "Calculator\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-08T08:10:37.588Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-09-08T08:10:37.588Z"
             }
           ]
         }
