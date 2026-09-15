@@ -1,0 +1,15 @@
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\First Loop\First Loop\bin\Debug\net8.0\First Loop.exe
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\First Loop\First Loop\bin\Debug\net8.0\First Loop.deps.json
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\First Loop\First Loop\bin\Debug\net8.0\First Loop.runtimeconfig.json
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\First Loop\First Loop\bin\Debug\net8.0\First Loop.dll
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\First Loop\First Loop\bin\Debug\net8.0\First Loop.pdb
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\First Loop\First Loop\obj\Debug\net8.0\First Loop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\First Loop\First Loop\obj\Debug\net8.0\First Loop.AssemblyInfoInputs.cache
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\First Loop\First Loop\obj\Debug\net8.0\First Loop.AssemblyInfo.cs
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\First Loop\First Loop\obj\Debug\net8.0\First Loop.csproj.CoreCompileInputs.cache
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\First Loop\First Loop\obj\Debug\net8.0\First Loop.sourcelink.json
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\First Loop\First Loop\obj\Debug\net8.0\First Loop.dll
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\First Loop\First Loop\obj\Debug\net8.0\refint\First Loop.dll
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\First Loop\First Loop\obj\Debug\net8.0\First Loop.pdb
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\First Loop\First Loop\obj\Debug\net8.0\First Loop.genruntimeconfig.cache
+C:\Users\1927458\OneDrive - Fife College\HNC Computing\Computing-Software-Development-stuff\C# stuff\First Loop\First Loop\obj\Debug\net8.0\ref\First Loop.dll
